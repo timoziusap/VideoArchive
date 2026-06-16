@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //Zugriffs und Push test
 //Timo test
 //Niclas Test
+//hello world
 public class VideoArchiveApplication{
 
 	public static void main(String[] args) {
