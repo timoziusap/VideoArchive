@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 //Zugriffs und Push test
-//Timo test 
+//Timo test
+//Niclas Test
 public class VideoArchiveApplication{
 
 	public static void main(String[] args) {
