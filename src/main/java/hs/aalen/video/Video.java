@@ -79,8 +79,6 @@ public class Video {
 
 	// Methode zum Ci zeigen +
 	// Diese Methode traegt den Namen der Person ein die das Video erstellt hat.
-	// Sie ist richtig, der Test laeuft durch und GitHub Actions wird gruen.
-	// Danach kann das Projekt deployed werden.
 	public void erstellerEintragen(String name) {
 		this.erstellerName = name;
 	}
@@ -88,9 +86,6 @@ public class Video {
 
 	// Methode zum Ci zeigen -
 	// Das ist die gleiche Methode, aber hier wurde vergessen den Namen zu speichern.
-	// Der Test schlaegt fehl und GitHub Actions wird rot. Es wird nichts deployed.
-	// Zum Vorfuehren die obere Methode auskommentieren und diese hier aktiv schalten.
-	//
 	// public void erstellerEintragen(String name) {
 	//     // hier passiert nichts, der Name wird nicht gespeichert
 	// }
