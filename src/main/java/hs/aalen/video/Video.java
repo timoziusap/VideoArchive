@@ -88,6 +88,6 @@ public class Video {
 	// Das ist die gleiche Methode, aber hier wurde vergessen den Namen zu speichern.
 	// hier passiert nichts, der Name wird nicht gespeichert
 //	public void erstellerEintragen(String name) {
-//	 }
+//	}
 
 }
