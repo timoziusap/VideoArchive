@@ -69,7 +69,19 @@ public class Video {
 		this.genre = genre;
 	}
 	
-	
-	
+
+//	 Methode zum Ci zeigen +
+//	 Beim Anlegen eines Videos gibt man seinen Namen an.
+//	 Die Methode baut daraus einen kurzen Satz wer das Video angelegt hat.
+	 public String werHatAngelegt(String name) {
+	     return title + " wurde angelegt von " + name;
+	 }
+
+	// Methode zum Ci zeigen -
+	// Gleiche Methode, aber der Name wurde vergessen.
+	// Dadurch stimmt der Satz nicht und der Test wird rot.
+	// public String werHatAngelegt(String name) {
+	//     return title + " wurde angelegt von ";
+	// }
 
 }
