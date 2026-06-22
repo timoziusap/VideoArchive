@@ -1,10 +1,11 @@
 package hs.aalen;
 
-import hs.aalen.video.Video;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import hs.aalen.video.Video;
 
 @SpringBootTest
 class VideoArchiveApplicationTests {
@@ -13,23 +14,14 @@ class VideoArchiveApplicationTests {
 	void contextLoads() {
 	}
 
-// Test zum Ci zeigen
-// Das ist der JUnit Test fuer die Methode werHatAngelegt aus der Klasse Video.
-// import hs.aalen.video.Video;
-// import static org.junit.jupiter.api.Assertions.assertEquals;
-
- @Test
- void zeigtWerDasVideoAngelegtHat() {
-     Video video = new Video("Matrix", "Klassiker", "16", "Action");
-     String ergebnis = video.werHatAngelegt("Niclas");
-     assertEquals("Matrix wurde angelegt von Niclas", ergebnis);
- }
-
-    // Methode zum Ci zeigen -
-    // Gleiche Methode, aber der Name wurde vergessen.
-    // Dadurch stimmt der Satz nicht und der Test wird rot.
-    // public String werHatAngelegt(String name) {
-    //     return title + " wurde angelegt von ";
-    // }
+	// Test fuer die Methode erstellerEintragen aus der Klasse Video.
+	// Wir legen ein Video an, tragen einen Namen ein und pruefen ob er gespeichert wurde.
+	// Mit der richtigen Methode wird der Test gruen, mit der kaputten Variante rot.
+	@Test
+	void erstellerWirdEingetragen() {
+		Video video = new Video("Matrix", "Klassiker", "16", "Action");
+		video.erstellerEintragen("Niclas");
+		assertEquals("Niclas", video.getErstellerName());
+	}
 
 }
