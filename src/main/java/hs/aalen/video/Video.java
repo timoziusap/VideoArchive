@@ -76,12 +76,4 @@ public class Video {
 	 public String werHatAngelegt(String name) {
 	     return title + " wurde angelegt von " + name;
 	 }
-
-	// Methode zum Ci zeigen -
-	// Gleiche Methode, aber der Name wurde vergessen.
-	// Dadurch stimmt der Satz nicht und der Test wird rot.
-	// public String werHatAngelegt(String name) {
-	//     return title + " wurde angelegt von ";
-	// }
-
 }
