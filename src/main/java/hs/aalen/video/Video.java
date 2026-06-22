@@ -77,17 +77,17 @@ public class Video {
 	}
 
 
-	// Methode zum Ci zeigen +
+	// Methode zum Ci zeigen + 2.
 	// Diese Methode traegt den Namen der Person ein die das Video erstellt hat.
 	public void erstellerEintragen(String name) {
 		this.erstellerName = name;
 	}
 
 
-	// Methode zum Ci zeigen -
+	// Methode zum Ci zeigen - 1.
 	// Das ist die gleiche Methode, aber hier wurde vergessen den Namen zu speichern.
-	// public void erstellerEintragen(String name) {
-	//     // hier passiert nichts, der Name wird nicht gespeichert
-	// }
+	// hier passiert nichts, der Name wird nicht gespeichert
+//	public void erstellerEintragen(String name) {
+//	 }
 
 }
