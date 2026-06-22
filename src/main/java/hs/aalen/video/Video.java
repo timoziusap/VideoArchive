@@ -81,9 +81,9 @@ public class Video {
 	// Diese Methode traegt den Namen der Person ein die das Video erstellt hat.
 	// Sie ist richtig, der Test laeuft durch und GitHub Actions wird gruen.
 	// Danach kann das Projekt deployed werden.
-	//	public void erstellerEintragen(String name) {
-	//		this.erstellerName = name;
-	//	}
+	public void erstellerEintragen(String name) {
+		this.erstellerName = name;
+	}
 
 
 	// Methode zum Ci zeigen -
