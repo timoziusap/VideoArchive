@@ -69,7 +69,11 @@ public class Video {
 		this.genre = genre;
 	}
 	
-	
-	
 
+//	 Methode zum Ci zeigen +
+//	 Beim Anlegen eines Videos gibt man seinen Namen an.
+//	 Die Methode baut daraus einen kurzen Satz wer das Video angelegt hat.
+	 public String werHatAngelegt(String name) {
+	     return title + " wurde angelegt von " + name;
+	 }
 }
