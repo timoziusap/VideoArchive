@@ -18,6 +18,7 @@ public class Video {
 	private String description;
 	private String ageRating;
 	private String genre;
+	private String erstellerName;
 	
 	@ManyToMany(mappedBy="favouriteVideos")
 	@JsonIgnore
@@ -68,12 +69,30 @@ public class Video {
 	public void setGenre(String genre) {
 		this.genre = genre;
 	}
-	
+	public String getErstellerName() {
+		return erstellerName;
+	}
+	public void setErstellerName(String erstellerName) {
+		this.erstellerName = erstellerName;
+	}
 
-//	 Methode zum Ci zeigen +
-//	 Beim Anlegen eines Videos gibt man seinen Namen an.
-//	 Die Methode baut daraus einen kurzen Satz wer das Video angelegt hat.
-	 public String werHatAngelegt(String name) {
-	     return title + " wurde angelegt von " + name;
-	 }
+
+	// Methode zum Ci zeigen +
+	// Diese Methode traegt den Namen der Person ein die das Video erstellt hat.
+	// Sie ist richtig, der Test laeuft durch und GitHub Actions wird gruen.
+	// Danach kann das Projekt deployed werden.
+	//	public void erstellerEintragen(String name) {
+	//		this.erstellerName = name;
+	//	}
+
+
+	// Methode zum Ci zeigen -
+	// Das ist die gleiche Methode, aber hier wurde vergessen den Namen zu speichern.
+	// Der Test schlaegt fehl und GitHub Actions wird rot. Es wird nichts deployed.
+	// Zum Vorfuehren die obere Methode auskommentieren und diese hier aktiv schalten.
+	//
+	// public void erstellerEintragen(String name) {
+	//     // hier passiert nichts, der Name wird nicht gespeichert
+	// }
+
 }

@@ -24,7 +24,8 @@ function addVideo() {
         'title':       $('[name=title]').val(),
         'description': $('[name=description]').val(),
         'ageRating':   $('[name=agerating]').val(),
-        'genre':       $('[name=genre]').val()
+        'genre':         $('[name=genre]').val(),
+        'erstellerName': $('[name=ersteller]').val()
     };
 
     $.ajax({
@@ -55,7 +56,8 @@ function postData() {
                     video.title,
                     video.description,
                     video.ageRating,
-                    video.genre
+                    video.genre,
+                    video.erstellerName
                 ]);
             });
             table.draw();
