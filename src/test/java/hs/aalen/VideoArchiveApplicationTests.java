@@ -14,13 +14,18 @@ class VideoArchiveApplicationTests {
 	void contextLoads() {
 	}
 
-	// Test fuer die Methode erstellerEintragen aus der Klasse Video.
-	// Wir legen ein Video an, tragen einen Namen ein und pruefen ob er gespeichert wurde.
 	@Test
-	void erstellerWirdEingetragen() {
+	void erstellerWirdEingetragen_richtig() {
 		Video video = new Video("Matrix", "Klassiker", "16", "Action");
 		video.erstellerEintragen("Niclas");
 		assertEquals("Niclas", video.getErstellerName());
 	}
+
+//	@Test
+//	void erstellerWirdEingetragen_falsch() {
+//		Video video = new Video("Matrix", "Klassiker", "16", "Action");
+//		video.erstellerEintragen("Niclas");
+//		assertEquals("Max", video.getErstellerName());
+//	}
 
 }
