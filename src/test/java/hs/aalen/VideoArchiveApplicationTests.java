@@ -13,18 +13,18 @@ class VideoArchiveApplicationTests {
 	}
 
 
-//	@Test
-//	void erstellerWirdEingetragen_richtig() {
-//		Video video = new Video("Matrix", "Klassiker", "16", "Action");
-//		video.erstellerEintragen("Niclas");
-//		assertEquals("Niclas", video.getErstellerName());
-//	}
-
 	@Test
-	void erstellerWirdEingetragen_falsch() {
+	void erstellerWirdEingetragen_richtig() {
 		Video video = new Video("Matrix", "Klassiker", "16", "Action");
 		video.erstellerEintragen("Niclas");
-		assertEquals("Max", video.getErstellerName());
+		assertEquals("Niclas", video.getErstellerName());
 	}
+
+//	@Test
+//	void erstellerWirdEingetragen_falsch() {
+//		Video video = new Video("Matrix", "Klassiker", "16", "Action");
+//		video.erstellerEintragen("Niclas");
+//		assertEquals("Max", video.getErstellerName());
+//	}
 
 }
