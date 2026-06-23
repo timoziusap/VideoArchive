@@ -1,10 +1,8 @@
 package hs.aalen;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import hs.aalen.video.Video;
 
 @SpringBootTest
@@ -13,6 +11,7 @@ class VideoArchiveApplicationTests {
 	@Test
 	void contextLoads() {
 	}
+
 
 	@Test
 	void erstellerWirdEingetragen_richtig() {
